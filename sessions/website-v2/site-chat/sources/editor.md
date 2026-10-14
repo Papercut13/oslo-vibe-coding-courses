@@ -1,0 +1,1 @@
+Open a poster study from Selected work. The editor lets a visitor change the headline and palette. The Export PNG button downloads the current design as a 900 x 1125 pixel PNG. This behavior is implemented in app.js, poster.js, and the editor in index.html.

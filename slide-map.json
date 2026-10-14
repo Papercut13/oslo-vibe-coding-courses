@@ -1,0 +1,1898 @@
+[
+  {
+    "week": 1,
+    "course": 1,
+    "session": 1,
+    "title": "Build your first website",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Build your first website"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "course": 1,
+    "session": 2,
+    "title": "Your Website, Version 2",
+    "slides": [
+      {
+        "id": "title",
+        "title": "Your website, version 2",
+        "number": 1
+      },
+      {
+        "id": "result",
+        "title": "One question. One useful answer.",
+        "number": 2
+      },
+      {
+        "id": "route",
+        "title": "Three upgrades for your website",
+        "number": 3
+      },
+      {
+        "id": "search-flow",
+        "title": "Start with your own content",
+        "number": 4
+      },
+      {
+        "id": "build-search",
+        "title": "Add \"Ask this site\"",
+        "number": 5
+      },
+      {
+        "id": "try-search",
+        "title": "Try a question",
+        "number": 6
+      },
+      {
+        "id": "unknown",
+        "title": "No source? Do not guess.",
+        "number": 7
+      },
+      {
+        "id": "ai-choice",
+        "title": "AI can help write the answer",
+        "number": 8
+      },
+      {
+        "id": "server",
+        "title": "Your server keeps the key",
+        "number": 9
+      },
+      {
+        "id": "vercel",
+        "title": "Connect the optional AI on Vercel",
+        "number": 10
+      },
+      {
+        "id": "key",
+        "title": "Never put an API key in the page",
+        "number": 11
+      },
+      {
+        "id": "selected-context",
+        "title": "Send the useful facts, not everything",
+        "number": 12
+      },
+      {
+        "id": "launch",
+        "title": "Before other people use the AI",
+        "number": 13
+      },
+      {
+        "id": "where-facts",
+        "title": "Good answers need clear notes",
+        "number": 14
+      },
+      {
+        "id": "karpathy",
+        "title": "Karpathy's LLM Wiki idea",
+        "number": 15
+      },
+      {
+        "id": "wiki-file",
+        "title": "One page, one clear fact",
+        "number": 16
+      },
+      {
+        "id": "readers",
+        "title": "Two readers. Different information.",
+        "number": 17
+      },
+      {
+        "id": "wiki-prompt",
+        "title": "Ask AI to organize, then review",
+        "number": 18
+      },
+      {
+        "id": "update",
+        "title": "Add one useful answer",
+        "number": 19
+      },
+      {
+        "id": "answer-checks",
+        "title": "Keep a few questions as checks",
+        "number": 20
+      },
+      {
+        "id": "security",
+        "title": "Keep the website and key safe",
+        "number": 21
+      },
+      {
+        "id": "ci",
+        "title": "GitHub repeats your checks",
+        "number": 22
+      },
+      {
+        "id": "release",
+        "title": "Preview first. Publish after review.",
+        "number": 23
+      },
+      {
+        "id": "maintain",
+        "title": "When something goes wrong",
+        "number": 24
+      },
+      {
+        "id": "your-turn",
+        "title": "Try it on your own website",
+        "number": 25
+      },
+      {
+        "id": "next",
+        "title": "A starting point for the next classes",
+        "number": 26
+      },
+      {
+        "id": "questions",
+        "title": "Questions & thanks",
+        "number": 27
+      }
+    ],
+    "special": true
+  },
+  {
+    "week": 3,
+    "course": 1,
+    "session": 3,
+    "title": "Make it truly yours",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Make it truly yours"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "course": 1,
+    "session": 4,
+    "title": "Be found and shared",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Be found and shared"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "course": 1,
+    "session": 5,
+    "title": "Launch with a way back",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Launch with a way back"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "course": 2,
+    "session": 1,
+    "title": "Brief an agent on your site",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Brief an agent on your site"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "course": 2,
+    "session": 2,
+    "title": "Spec one useful feature",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Spec one useful feature"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "course": 2,
+    "session": 3,
+    "title": "Tests that keep AI honest",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Tests that keep AI honest"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "course": 2,
+    "session": 4,
+    "title": "Reuse your review process",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Reuse your review process"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "course": 2,
+    "session": 5,
+    "title": "Ship through a pull request",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Ship through a pull request"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "course": 3,
+    "session": 1,
+    "title": "Give your helper one tool",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Give your helper one tool"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "course": 3,
+    "session": 2,
+    "title": "Make tools easy to use",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Make tools easy to use"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 13,
+    "course": 3,
+    "session": 3,
+    "title": "Measure agent quality",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Measure agent quality"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 14,
+    "course": 3,
+    "session": 4,
+    "title": "Put limits around the agent",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Put limits around the agent"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 15,
+    "course": 3,
+    "session": 5,
+    "title": "Faster, cheaper, still useful",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Faster, cheaper, still useful"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 16,
+    "course": 4,
+    "session": 1,
+    "title": "Watch your website",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Watch your website"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 17,
+    "course": 4,
+    "session": 2,
+    "title": "Schedule useful checks",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Schedule useful checks"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 18,
+    "course": 4,
+    "session": 3,
+    "title": "Let AI propose, you approve",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Let AI propose, you approve"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 19,
+    "course": 4,
+    "session": 4,
+    "title": "Trust only verified events",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Trust only verified events"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 20,
+    "course": 4,
+    "session": 5,
+    "title": "Practice a safe recovery",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Practice a safe recovery"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 21,
+    "course": 5,
+    "session": 1,
+    "title": "See what your agent reads",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "See what your agent reads"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 22,
+    "course": 5,
+    "session": 2,
+    "title": "Grow your LLM wiki",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Grow your LLM wiki"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 23,
+    "course": 5,
+    "session": 3,
+    "title": "Check your wiki in CI",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Check your wiki in CI"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 24,
+    "course": 5,
+    "session": 4,
+    "title": "Keep retrieved text in its place",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Keep retrieved text in its place"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  },
+  {
+    "week": 25,
+    "course": 5,
+    "session": 5,
+    "title": "Hand it to a fresh session",
+    "slides": [
+      {
+        "number": 1,
+        "id": "title",
+        "title": "Hand it to a fresh session"
+      },
+      {
+        "number": 2,
+        "id": "example",
+        "title": "The working example"
+      },
+      {
+        "number": 3,
+        "id": "build",
+        "title": "Build along"
+      },
+      {
+        "number": 4,
+        "id": "first-request",
+        "title": "Your first request"
+      },
+      {
+        "number": 5,
+        "id": "try",
+        "title": "Try the behavior"
+      },
+      {
+        "number": 6,
+        "id": "understand",
+        "title": "What happened"
+      },
+      {
+        "number": 7,
+        "id": "specific",
+        "title": "Test a failure"
+      },
+      {
+        "number": 8,
+        "id": "next-change",
+        "title": "Your next change"
+      },
+      {
+        "number": 9,
+        "id": "your-build",
+        "title": "Build your version"
+      },
+      {
+        "number": 10,
+        "id": "checks",
+        "title": "Check your result"
+      },
+      {
+        "number": 11,
+        "id": "lesson",
+        "title": "Your deliverable"
+      },
+      {
+        "number": 12,
+        "id": "showcase",
+        "title": "Show what you built"
+      },
+      {
+        "number": 13,
+        "id": "questions",
+        "title": "Questions and thanks"
+      }
+    ]
+  }
+]

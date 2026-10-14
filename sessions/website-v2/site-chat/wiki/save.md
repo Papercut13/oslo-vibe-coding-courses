@@ -1,0 +1,1 @@
+Choose Save draft in the poster editor. Open saved draft restores it in the same browser. Drafts do not sync across devices. If saving fails, keep the page open and export a PNG. File-URL storage can behave differently between browsers.

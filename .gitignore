@@ -1,0 +1,13 @@
+node_modules/
+qa/
+.DS_Store
+**/node_modules/
+**/dist/
+**/qa/
+**/.env
+**/.env.*
+!**/.env.example
+**/.vercel/
+planning/*-result.json
+playwright-report/
+test-results/

@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),{root,readEntries}=require('./content.cjs');
+const entries=readEntries(),docs=entries.map(({id,title,text,url,verifiedOn})=>({id,title,text,url,verifiedOn}));
+fs.writeFileSync(path.join(root,'knowledge.json'),JSON.stringify(docs,null,2)+'\n');
+fs.writeFileSync(path.join(root,'knowledge.js'),'window.SiteKnowledge = '+JSON.stringify(docs).replaceAll('<','\\u003c')+';\n');
+const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const help='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Studio Launch | Help</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="chat.css"></head><body><main class="help-page"><a href="index.html">Back to Studio Launch</a><h1>Help</h1>'+docs.map(d=>'<article id="'+d.id+'"><h2>'+esc(d.title)+'</h2><p>'+esc(d.text)+'</p><small>Reviewed '+d.verifiedOn+'</small></article>').join('')+'</main></body></html>';
+fs.writeFileSync(path.join(root,'help.html'),help);
+fs.mkdirSync(path.join(root,'assets/vendor'),{recursive:true});
+fs.copyFileSync(path.join(root,'node_modules/minisearch/dist/umd/index.js'),path.join(root,'assets/vendor/minisearch.js'));
+fs.copyFileSync(path.join(root,'node_modules/minisearch/LICENSE.txt'),path.join(root,'assets/vendor/minisearch-LICENSE.txt'));
+const out=path.join(root,'dist');fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out);
+for(const n of ['index.html','style.css','core.js','poster.js','app.js','assets','chat.css','chat.js','search.js','knowledge.js','help.html'])fs.cpSync(path.join(root,n),path.join(out,n),{recursive:true});
+console.log('Built public pages and approved knowledge. No private context or keys copied.');

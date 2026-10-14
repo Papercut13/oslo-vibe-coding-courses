@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "id": "download",
+      "title": "Download a poster",
+      "file": "download.md",
+      "source": "sources/editor.md",
+      "verifiedOn": "2026-10-14",
+      "public": true,
+      "sourceHash": "de07dcc94cf0e6e499f468bc4dd217422329ddf3b5fdf58e90a12e925563ca29",
+      "wikiHash": "ba7116ea8044e17e2725b46c0d3128774edc90d86ecbdfcbb6362a57f5ecfcca"
+    },
+    {
+      "id": "save",
+      "title": "Save your design",
+      "file": "save.md",
+      "source": "sources/storage.md",
+      "verifiedOn": "2026-10-14",
+      "public": true,
+      "sourceHash": "28e6b02035c6b3e68b9347845a3f3effa3c31c1d104f96e5d0608ed92253b0a0",
+      "wikiHash": "8b18d37667661cf5cc7d98ddef37aeea3262f4f4bccccab4c37944a8da3fd0a0"
+    },
+    {
+      "id": "projects",
+      "title": "Explore the three studies",
+      "file": "projects.md",
+      "source": "sources/collection.md",
+      "verifiedOn": "2026-10-14",
+      "public": true,
+      "sourceHash": "05be80a88641a2f6587f371376ffd4681dd987558cbb08d59b4e8fecfe24cbfc",
+      "wikiHash": "d7af991e6485fe8961eeb043ce595b582db08de54cd0935dc9f8581116b8da73"
+    }
+  ]
+}

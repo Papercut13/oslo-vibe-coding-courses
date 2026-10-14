@@ -1,0 +1,1 @@
+Studio Launch has three original studies: Form & Rhythm (Type), Blue Hour (Composition), and Open Studio (Type). All shows three projects. Type shows two. Composition shows Blue Hour. This is a fictional workshop portfolio, not an online shop.

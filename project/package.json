@@ -1,0 +1,8 @@
+{
+  "name": "studio-launch-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Offline-ready creative portfolio for an Oslo Vibe Coding workshop",
+  "scripts": { "test": "node --test test/core.test.cjs", "check": "node --check app.js && node --check core.js && node --check poster.js" },
+  "engines": { "node": ">=22" }
+}

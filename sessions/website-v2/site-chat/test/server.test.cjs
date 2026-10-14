@@ -1,0 +1,30 @@
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const {createHandler,UNKNOWN}=require('../server/answer.cjs'),documents=require('../knowledge.json');
+const env={ENABLE_AI:'true',AI_GUARDS_CONFIGURED:'true',AI_GATEWAY_API_KEY:'test-credential-never-real',AI_GATEWAY_MODEL:'test/model'};
+const req=(value={question:'How do I download a poster?'},options={})=>new Request('https://example.test/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(value),...options});
+const model=data=>async()=>Response.json({choices:[{message:{content:JSON.stringify(data)}}]});
+test('Unknown question skips the paid model call',async()=>{
+ const h=createHandler({documents,env,fetchImpl:()=>{throw Error('Must not call');}});
+ const res=await h(req({question:'Do you offer refunds?'}));assert.equal(res.status,200);assert.equal((await res.json()).answer,UNKNOWN);
+});
+test('Unconfigured AI fails honestly',async()=>{const h=createHandler({documents,env:{}});assert.equal((await h(req())).status,503);});
+test('Paid requests stay disabled until launch controls are acknowledged',async()=>{const h=createHandler({documents,env:{...env,AI_GUARDS_CONFIGURED:'false'}});assert.equal((await h(req())).status,503);});
+test('Valid model answer returns only server-approved sources',async()=>{
+ let sent;
+ const h=createHandler({documents,env,fetchImpl:async(url,options)=>{sent=JSON.parse(options.body);assert.equal(url,'https://ai-gateway.vercel.sh/v1/chat/completions');return model({answer:'Choose Export PNG.',sourceIds:['download'],insufficient:false})();}});
+ const res=await h(req()),body=await res.json();assert.equal(res.status,200);assert.equal(body.mode,'ai');assert.equal(body.sources[0].url,'help.html#download');
+ assert.equal(sent.model,'test/model');assert.equal(sent.max_tokens,600);assert.equal(sent.tools,undefined);assert.doesNotMatch(JSON.stringify(sent),/test-credential|sync to your account|AGENTS.md/);
+ assert.equal(JSON.parse(sent.messages[1].content).publicFacts[0].id,'download');
+});
+test('A citation outside selected evidence is rejected',async()=>{const h=createHandler({documents,env,fetchImpl:model({answer:'Anything',sourceIds:['save'],insufficient:false})});assert.equal((await h(req())).status,502);});
+test('Missing citations are rejected',async()=>{const h=createHandler({documents,env,fetchImpl:model({answer:'Anything',sourceIds:[],insufficient:false})});assert.equal((await h(req())).status,502);});
+test('Insufficient evidence produces a fixed honest unknown',async()=>{const h=createHandler({documents,env,fetchImpl:model({answer:'Made up!',sourceIds:[],insufficient:true})});assert.equal((await (await h(req())).json()).answer,UNKNOWN);});
+test('Model errors do not leak response details or credentials',async()=>{const h=createHandler({documents,env,fetchImpl:async()=>new Response('secret provider error',{status:401})});const res=await h(req());assert.equal(res.status,502);assert.doesNotMatch(await res.text(),/secret|credential/);});
+test('Rate-limit failure is returned with a usable message',async()=>{const h=createHandler({documents,env,fetchImpl:async()=>new Response('',{status:429})});assert.equal((await h(req())).status,429);});
+test('Timeout/fetch error does not fabricate a model answer',async()=>{const h=createHandler({documents,env,fetchImpl:async()=>{throw Error('Timeout');}});assert.equal((await h(req())).status,502);});
+test('Invalid model JSON is rejected',async()=>{const h=createHandler({documents,env,fetchImpl:async()=>Response.json({choices:[{message:{content:'bad'}}]})});assert.equal((await h(req())).status,502);});
+test('Oversized model text is rejected',async()=>{const h=createHandler({documents,env,fetchImpl:model({answer:'x'.repeat(1601),sourceIds:['download'],insufficient:false})});assert.equal((await h(req())).status,502);});
+test('Reject invalid questions and client-supplied sources',async()=>{const h=createHandler({documents,env:{}});for(const body of [{question:''},{question:'x'.repeat(501)},{question:123},{question:'download',sources:['private']},null])assert.equal((await h(req(body))).status,400);});
+test('Reject oversized body and invalid JSON',async()=>{const h=createHandler({documents,env:{}});assert.equal((await h(req({}, {body:'x'.repeat(5000)}))).status,413);assert.equal((await h(req({}, {body:'invalid'}))).status,400);});
+test('Reject cross-origin browser calls',async()=>{const h=createHandler({documents,env:{}});assert.equal((await h(req({}, {headers:{'Content-Type':'application/json',Origin:'https://other.test'}}))).status,403);});
+test('Reject GET and non-JSON requests',async()=>{const h=createHandler({documents,env:{}});assert.equal((await h(new Request('https://example.test/api/chat'))).status,405);assert.equal((await h(req({}, {headers:{'Content-Type':'text/plain'}}))).status,415);});

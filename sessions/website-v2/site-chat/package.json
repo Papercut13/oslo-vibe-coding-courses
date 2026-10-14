@@ -1,0 +1,19 @@
+{
+  "name": "studio-launch-site-chat",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Site-only search, reviewed wiki, and optional server-side AI for Studio Launch",
+  "scripts": {
+    "dev": "node dev.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "node --test test/*.test.cjs",
+    "check": "node scripts/check.cjs",
+    "approve-content": "node scripts/approve-content.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "minisearch": "7.2.0"
+  }
+}

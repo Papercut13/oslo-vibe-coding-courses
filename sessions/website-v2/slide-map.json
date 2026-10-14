@@ -1,0 +1,110 @@
+[
+  {
+    "id": "title",
+    "title": "Your website, version 2"
+  },
+  {
+    "id": "result",
+    "title": "One question. One useful answer."
+  },
+  {
+    "id": "route",
+    "title": "Three upgrades for your website"
+  },
+  {
+    "id": "search-flow",
+    "title": "Start with your own content"
+  },
+  {
+    "id": "build-search",
+    "title": "Add \"Ask this site\""
+  },
+  {
+    "id": "try-search",
+    "title": "Try a question"
+  },
+  {
+    "id": "unknown",
+    "title": "No source? Do not guess."
+  },
+  {
+    "id": "ai-choice",
+    "title": "AI can help write the answer"
+  },
+  {
+    "id": "server",
+    "title": "Your server keeps the key"
+  },
+  {
+    "id": "vercel",
+    "title": "Connect the optional AI on Vercel"
+  },
+  {
+    "id": "key",
+    "title": "Never put an API key in the page"
+  },
+  {
+    "id": "selected-context",
+    "title": "Send the useful facts, not everything"
+  },
+  {
+    "id": "launch",
+    "title": "Before other people use the AI"
+  },
+  {
+    "id": "where-facts",
+    "title": "Good answers need clear notes"
+  },
+  {
+    "id": "karpathy",
+    "title": "Karpathy's LLM Wiki idea"
+  },
+  {
+    "id": "wiki-file",
+    "title": "One page, one clear fact"
+  },
+  {
+    "id": "readers",
+    "title": "Two readers. Different information."
+  },
+  {
+    "id": "wiki-prompt",
+    "title": "Ask AI to organize, then review"
+  },
+  {
+    "id": "update",
+    "title": "Add one useful answer"
+  },
+  {
+    "id": "answer-checks",
+    "title": "Keep a few questions as checks"
+  },
+  {
+    "id": "security",
+    "title": "Keep the website and key safe"
+  },
+  {
+    "id": "ci",
+    "title": "GitHub repeats your checks"
+  },
+  {
+    "id": "release",
+    "title": "Preview first. Publish after review."
+  },
+  {
+    "id": "maintain",
+    "title": "When something goes wrong"
+  },
+  {
+    "id": "your-turn",
+    "title": "Try it on your own website"
+  },
+  {
+    "id": "next",
+    "title": "A starting point for the next classes"
+  },
+  {
+    "id": "questions",
+    "title": "Questions & thanks"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "oslo-vibe-coding-courses",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node sessions/website-v2/build.cjs && node build.mjs",
+    "test": "node --test labs/core.test.cjs project/test/core.test.cjs test/*.test.mjs && npm --prefix sessions/website-v2/site-chat test",
+    "verify": "node verify-and-export.cjs",
+    "verify:project": "node verify-project.cjs",
+    "verify:session2": "node sessions/website-v2/verify-chat.cjs"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": { "playwright": "^1.55.0", "sharp": "^0.35.5" }
+}

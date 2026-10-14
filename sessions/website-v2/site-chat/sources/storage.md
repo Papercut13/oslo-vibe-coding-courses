@@ -1,0 +1,1 @@
+Save draft stores the current project, headline, and palette in localStorage in this browser. Open saved draft restores it. Storage is not synced between devices. If storage is blocked, the current design remains and a warning is shown. File-URL storage behavior differs across browsers; an export is a separate downloadable copy.

@@ -1,0 +1,14 @@
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const Studio = require('../core.js');
+test('All shows three unique projects', () => { assert.equal(Studio.filterProjects('All').length, 3); assert.equal(new Set(Studio.projects.map(p => p.id)).size, 3); });
+test('Type shows exactly the two typography projects', () => assert.deepEqual(Studio.filterProjects('Type').map(p => p.id), ['form', 'open']));
+test('Composition shows only Blue Hour', () => assert.deepEqual(Studio.filterProjects('Composition').map(p => p.id), ['blue']));
+test('Unknown category does not silently show every project', () => assert.deepEqual(Studio.filterProjects('Other'), []));
+test('Draft input is bounded and valid', () => { assert.equal(Studio.normalizeDraft({ projectId: 'form', palette: 'blue', headline: 'x'.repeat(100) }).headline.length, 45); assert.equal(Studio.normalizeDraft({ projectId: 'unknown', palette: 'blue', headline: 'A' }), null); assert.equal(Studio.normalizeDraft({ projectId: 'form', palette: '__proto__', headline: 'A' }), null); });
+test('Draft survives a fresh storage read', () => { const data = new Map(); const storage = { getItem: k => data.get(k), setItem: (k, v) => data.set(k, v) }; const draft = { projectId: 'blue', headline: 'BUILD TOGETHER', palette: 'ember' }; assert.equal(Studio.saveDraft(storage, draft).ok, true); assert.deepEqual(Studio.readDraft(storage).draft, draft); });
+test('Failed storage write is reported without mutating the draft', () => { const draft = { projectId: 'form', headline: 'MY DRAFT', palette: 'ember' }; const result = Studio.saveDraft({ setItem() { throw Error('Unavailable'); } }, draft); assert.equal(result.ok, false); assert.equal(draft.headline, 'MY DRAFT'); });
+test('Corrupt saved data fails safely', () => { assert.equal(Studio.readDraft({ getItem() { return '{bad'; } }).draft, null); assert.equal(Studio.readDraft({ getItem() { return 'null'; } }).draft, null); });
+test('Page includes actual product metadata and a single h1', () => { const html = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8'); assert.match(html, /<title>Studio Launch \| Interactive Poster Studies<\/title>/); assert.match(html, /name="description" content="[^"]{40,}"/); assert.equal((html.match(/<h1[ >]/g) || []).length, 1); assert.doesNotMatch(html, /sk_live_|sk_test_/); });

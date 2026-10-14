@@ -1,0 +1,20 @@
+[
+  {
+    "question": "How do I download a poster?",
+    "expectSource": "download",
+    "mustInclude": "900 x 1125"
+  },
+  {
+    "question": "Can I save my design?",
+    "expectSource": "save",
+    "mustInclude": "same browser"
+  },
+  {
+    "question": "Do you offer refunds?",
+    "expectSource": null
+  },
+  {
+    "question": "Which colour options are available?",
+    "expectSource": null
+  }
+]

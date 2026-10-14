@@ -1,0 +1,33 @@
+# Activation is pending GitHub workflow permission; see .github/README.md.
+name: Course materials
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: bash scripts/setup-cloud.sh
+      - run: npm run verify
+      - run: npm run verify:project
+      - run: npm run verify:session2
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: course-review-evidence
+          path: |
+            qa/
+            sessions/website-v2/qa/
+            poster-overview.png
+            week-*/poster-*.png
+          retention-days: 14

@@ -1,0 +1,278 @@
+// The approved progression supersedes the original, repetitive weekly outline.
+export const revisions = [
+  {
+    title: 'Build your first website', subtitle: 'An idea becomes something people can try.',
+    artifact: 'A portfolio with editable posters, filters and local drafts.',
+    previous: 'Your own idea and a small set of truthful project facts.',
+    exercise: 'Build Studio Launch, try the poster editor, save a draft and export a PNG. Introduce GitHub and Vercel as the next publication steps.',
+    failure: 'Reload after saving, then try with browser storage unavailable.',
+    expected: 'A real save survives reload; a failed save is reported honestly.',
+    explanation: 'The browser displays your content and runs interactions; a local draft belongs to this browser, not a cloud account.',
+    flow: ['Describe the page', 'Build and try it', 'Keep a checked version'],
+    poster: ['Build a website with your AI tool', 'Add useful interactions and local drafts', 'Check it and prepare to publish'], lab: 'website'
+  },
+  {
+    title: 'Your Website, Version 2', subtitle: 'Help visitors find answers. Keep your site up to date.',
+    artifact: 'Site-only search, a reviewed mini wiki and a checked update.',
+    previous: 'The website built in Course 01, Session 01.',
+    exercise: 'Add Ask this site using approved public facts. Introduce optional server-side AI on Vercel, a reviewed LLM wiki and GitHub checks.',
+    failure: 'Ask a question your site cannot answer; then change one FAQ.',
+    expected: 'Missing facts remain unknown; the reviewed update appears with its source.',
+    explanation: 'Search finds relevant facts; optional AI turns those facts into an answer. Your coding instructions are separate from public knowledge.',
+    flow: ['Ask your website', 'Organize its knowledge', 'Keep it working'],
+    poster: ['Add website search and an AI help chat', 'Start an LLM wiki with clear agent rules', 'Update, check and release with GitHub'], lab: 'lookup'
+  },
+  {
+    title: 'Make it truly yours', subtitle: 'Real content. Clear design. A usable phone layout.',
+    artifact: 'Your own content and a checked, accessible visual direction.',
+    previous: 'Your Version 2 site, search and existing checks.',
+    exercise: 'Write facts.md. Ask the agent to replace sample copy using only those facts, improve one design layer, and check keyboard use, image descriptions and phone layout.',
+    failure: 'Use a very long heading and remove one image description.',
+    expected: 'The layout still fits; the missing description is flagged for review.',
+    explanation: 'A design reference describes visual qualities. It does not grant permission to copy assets or invent achievements.',
+    flow: ['Supply real facts', 'Refine the design', 'Check phone and keyboard'],
+    poster: ['Make the content your own', 'Guide the look with visual references', 'Check phone layouts and accessibility'], lab: 'design', refs: ['css', 'accessibility', 'workflow']
+  },
+  {
+    title: 'Be found and shared', subtitle: 'Make your page easy to understand and share.',
+    artifact: 'Factual metadata, a share image and an updated site search.',
+    previous: 'Your own content and the poster export from Session 01.',
+    exercise: 'Write a page title and description from real facts. Create a share image, add a useful 404 page, and make new public content searchable.',
+    failure: 'Add a page without updating the search index; request a missing URL.',
+    expected: 'The missing search entry is detected; a missing page offers a useful route back.',
+    explanation: 'Metadata describes the page. It can improve understanding and sharing, but cannot guarantee search rankings.',
+    flow: ['Describe the real content', 'Update previews and search', 'Check missing pages'],
+    poster: ['Improve titles and sharing previews', 'Keep website search up to date', 'Handle broken links and missing pages'], lab: 'repair', refs: ['seo', 'html', 'publish']
+  },
+  {
+    title: 'Launch with a way back', subtitle: 'A reviewed release and a recovery you have tried.',
+    artifact: 'A release checklist, release notes and a rollback rehearsal.',
+    previous: 'Your site, search, knowledge folder and GitHub checks.',
+    exercise: 'Review a Vercel preview, publish only with approval, and verify the URL from another device. Rehearse a visible mistake and manual rollback on a disposable preview.',
+    failure: 'Remove AI configuration in the preview and rehearse a failed release.',
+    expected: 'Site-only search remains usable; recovery is verified against the original symptom.',
+    explanation: 'A preview is a version to inspect. Publishing makes a version live; rollback restores a known-good version.',
+    flow: ['Inspect the preview', 'Approve the release', 'Verify or restore'],
+    poster: ['Review and publish your website', 'Keep search usable when AI is unavailable', 'Practice restoring a known-good version'], lab: 'release', refs: ['publish', 'ci']
+  },
+  {
+    title: 'Brief an agent on your site', subtitle: 'Let it investigate before it changes anything.',
+    artifact: 'A verified code map and one tested project instruction.',
+    previous: 'Your website repository and the instructions added in Course 01.',
+    exercise: 'Ask an agent to locate search, wiki and tests without editing. Check three file references yourself. Add one useful instruction and test it in a fresh session.',
+    failure: 'The agent cites a nonexistent function or attempts an unapproved edit.',
+    expected: 'Incorrect references are rejected; actual tool permissions limit unauthorized actions.',
+    explanation: 'Instructions describe how to work. Permissions determine what the environment actually allows.',
+    flow: ['Inspect the repository', 'Define one small change', 'Review the evidence'],
+    poster: ['Map your website with an agent', 'Set a clear task and permissions', 'Check its claims against real files'], lab: 'scope', refs: ['workflow', 'codexInstructions']
+  },
+  {
+    title: 'Spec one useful feature', subtitle: 'Turn a vague request into something checkable.',
+    artifact: 'A specification for a shareable website search link.',
+    previous: 'Ask this site and your verified code map.',
+    exercise: 'Specify ?q= search links: opening a shared URL restores the query, empty queries are useful, unknown results stay honest and browser Back works.',
+    failure: 'Use an empty query, special characters and HTML-like text in the URL.',
+    expected: 'Text stays text; URLs round-trip correctly and no script executes.',
+    explanation: 'A specification records the behavior and boundaries before the agent chooses an implementation.',
+    flow: ['Describe the visitor action', 'Write acceptance examples', 'Build the first slice'],
+    poster: ['Specify a shareable search link', 'Write examples of correct behavior', 'Cover empty and unexpected inputs'], lab: 'spec', refs: ['spec', 'url']
+  },
+  {
+    title: 'Tests that keep AI honest', subtitle: 'Keep the feature and the existing site working.',
+    artifact: 'A tested search-link implementation and regression evidence.',
+    previous: 'The shareable-search specification and existing website tests.',
+    exercise: 'Write acceptance tests first, ask the agent to implement the feature, then review code and test changes separately. Keep the original tests intact.',
+    failure: 'Seed a wrong filter result or an unsafe HTML-rendering shortcut.',
+    expected: 'The original failure is reproduced and repaired without deleting its check.',
+    explanation: 'A regression test preserves a specific behavior. Green tests do not prove every behavior is correct.',
+    flow: ['Write the failing check', 'Make the smallest repair', 'Run old and new checks'],
+    poster: ['Write checks before the change', 'Let AI build and repair the feature', 'Protect the tests from shortcuts'], lab: 'repair', refs: ['workflow', 'ci']
+  },
+  {
+    title: 'Reuse your review process', subtitle: 'A repeatable checklist, tested on real mistakes.',
+    artifact: 'A reusable review procedure with a known-defect scorecard.',
+    previous: 'Your feature diff and regression tests.',
+    exercise: 'Write a tool-neutral review file covering unsafe HTML, secrets, links, accessibility and unrelated edits. Try it against three seeded defects. Package it as a skill only in a client that supports it.',
+    failure: 'The agent says looks good despite a known unsafe rendering defect.',
+    expected: 'The missed defect stays in the scorecard; revise and rerun the procedure.',
+    explanation: 'A reusable instruction reduces repetition. It is not an automatic security audit or a permission boundary.',
+    flow: ['Write the procedure', 'Test known defects', 'Revise from evidence'],
+    poster: ['Create a reusable review checklist', 'Test it on known mistakes', 'Use skills without relying on magic'], lab: 'scope', refs: ['skills', 'codexInstructions', 'security']
+  },
+  {
+    title: 'Ship through a pull request', subtitle: 'AI makes the change. You review the evidence.',
+    artifact: 'A reviewable feature PR, preview and release note.',
+    previous: 'Your search-link feature and reusable review procedure.',
+    exercise: 'Have the agent prepare a focused PR with actual test results. Inspect CI, the hosted preview and the diff before deciding whether to merge.',
+    failure: 'CI is green but the preview has missing configuration.',
+    expected: 'The review catches the difference; no merge is justified by test status alone.',
+    explanation: 'A pull request makes a proposed change reviewable. Required checks and reviews must be configured, not merely requested.',
+    flow: ['Propose a focused PR', 'Check code and preview', 'Approve or request changes'],
+    poster: ['Have AI prepare a focused change', 'Review checks and the hosted preview', 'Merge with a clear release note'], lab: 'release', refs: ['ci', 'publish', 'protectedBranches']
+  },
+  {
+    title: 'Give your helper one tool', subtitle: 'See the difference between search and an agent.',
+    artifact: 'A one-tool agent-loop exercise with a readable trace.',
+    previous: 'Your optional AI help endpoint from Course 01.',
+    exercise: 'Build a harness where a model can request search_site. Use a scripted mock first, log each step, then optionally try a real model with your own key and budget.',
+    failure: 'The model answers without retrieving facts or requests an unavailable tool.',
+    expected: 'Unsupported tools are rejected and unsupported answers fail evaluation.',
+    explanation: 'A model can choose an action. The harness validates, executes and limits that action. A mock tests the harness, not model quality.',
+    flow: ['Model requests a tool', 'Harness validates and runs it', 'Model receives the result'],
+    poster: ['Extend the website help feature', 'Add one read-only search tool', 'Inspect every step in a trace'], lab: 'lookup', refs: ['harness', 'context']
+  },
+  {
+    title: 'Make tools easy to use', subtitle: 'Clear inputs, narrow access and useful errors.',
+    artifact: 'Validated project tools with documented error cases.',
+    previous: 'The one-tool harness and its trace format.',
+    exercise: 'Add list_projects and get_project with clear descriptions, input schemas and distinct invalid/not-found outcomes. Explain MCP as an optional connection layer, not a replacement backend.',
+    failure: 'Use empty IDs, oversized input and two confusing tool descriptions.',
+    expected: 'Invalid inputs are rejected; traces show tool-choice mistakes without leaking internals.',
+    explanation: 'A tool contract describes accepted input and returned output. Permissions still have to be enforced where the operation runs.',
+    flow: ['Validate the request', 'Read only allowed data', 'Return a result or useful error'],
+    poster: ['Define clear tool inputs and outputs', 'Test errors and limited access', 'Understand where MCP fits'], lab: 'tool', refs: ['mcp']
+  },
+  {
+    title: 'Measure agent quality', subtitle: 'The same questions. Inspectable results.',
+    artifact: 'At least 12 evaluation cases and a fixed scoring rubric.',
+    previous: 'Your tool-using helper and its traces.',
+    exercise: 'Create routine, unknown, ambiguous and invalid cases. Keep some held out. Store outputs and scores; repeat optional live runs rather than relying on one successful attempt.',
+    failure: 'An unknown answer is invented, or the scoring rule changes after seeing results.',
+    expected: 'Failures remain visible and comparisons use the same cases and rubric.',
+    explanation: 'An evaluation measures the behaviors you selected. It is not a guarantee about every possible input.',
+    flow: ['Define representative cases', 'Run the same checks', 'Inspect failures and scores'],
+    poster: ['Build a realistic evaluation set', 'Score facts, sources and unknown answers', 'Compare changes without hiding failures'], lab: 'eval', refs: ['eval']
+  },
+  {
+    title: 'Put limits around the agent', subtitle: 'Stop for a reason, not after endless retries.',
+    artifact: 'Harness limits for attempts, time and repeated calls.',
+    previous: 'Your helper harness and evaluation cases.',
+    exercise: 'Enforce step and elapsed-time caps outside the model. Retry only temporary failures. Add repeated-call and timeout cases to the evaluation set.',
+    failure: 'A temporary error never resolves or the model repeats the same action.',
+    expected: 'Execution stops at the configured bound with an explicit reason.',
+    explanation: 'A prompt can ask the model to stop. A harness limit actually prevents further work.',
+    flow: ['Attempt an allowed action', 'Read the result and budget', 'Continue or stop'],
+    poster: ['Set step and time limits', 'Retry only recoverable failures', 'Record why the agent stopped'], lab: 'loop', refs: ['harness']
+  },
+  {
+    title: 'Faster, cheaper, still useful', subtitle: 'Reduce waste without losing answer quality.',
+    artifact: 'A quality, latency and usage comparison for one change.',
+    previous: 'Your fixed evaluation set and bounded harness.',
+    exercise: 'Record provider usage, measured latency and calls for each case. Change one variable, such as prompt size or tool layout. Compare quality before claiming an improvement.',
+    failure: 'The faster version loses honest unknowns or reports character counts as tokens.',
+    expected: 'Quality regressions are visible; estimates are not presented as measured usage.',
+    explanation: 'Efficiency means preserving required quality while reducing time or cost. Mock calls cannot establish real model prices or token usage.',
+    flow: ['Measure the baseline', 'Change one variable', 'Compare quality and usage'],
+    poster: ['Measure quality, time and usage', 'Reduce one source of waste', 'Keep the answers useful'], lab: 'eval', refs: ['eval', 'usage']
+  },
+  {
+    title: 'Watch your website', subtitle: 'Read-only checks before any automatic action.',
+    artifact: 'A timestamped health report for your website.',
+    previous: 'Your published site and its no-key search fallback.',
+    exercise: 'Check response status, latency and expected content on a local test server first. With permission, run the same checks against your own URL.',
+    failure: 'A page returns status 200 but contains an error screen or stale data.',
+    expected: 'The report separates observed facts from guesses about the cause.',
+    explanation: 'A successful HTTP response does not prove that the expected page or behavior is working.',
+    flow: ['Read a real signal', 'Compare with expectations', 'Report without changing anything'],
+    poster: ['Check your own website', 'Separate symptoms from guesses', 'Keep the first version read-only'], lab: 'health', refs: ['http', 'ci']
+  },
+  {
+    title: 'Schedule useful checks', subtitle: 'One incident, not a new alert every run.',
+    artifact: 'An incident-key policy and a scheduled-check exercise.',
+    previous: 'Your read-only website health check.',
+    exercise: 'Design a GitHub Actions schedule that checks the site, opens one issue per incident and records recovery. Test duplicate handling before enabling the schedule.',
+    failure: 'Two failing runs try to create two issues, or runs arrive late.',
+    expected: 'Duplicate effects are avoided and the report does not promise exact execution time.',
+    explanation: 'Idempotency means a repeated request does not repeat its effect. A real workflow needs durable state and appropriate token permissions.',
+    flow: ['Run the check', 'Find the incident record', 'Update rather than duplicate'],
+    poster: ['Run repeatable website checks', 'Avoid duplicate alerts', 'Record failures and recovery'], lab: 'dedupe', refs: ['schedule', 'ci']
+  },
+  {
+    title: 'Let AI propose, you approve', subtitle: 'Review the exact change before it can act.',
+    artifact: 'A proposed fix with evidence, risk and a rollback plan.',
+    previous: 'A health-check issue and your PR review workflow.',
+    exercise: 'Ask an agent to draft a fix PR from an incident. Bind review to the exact commit and test whether a later change requires fresh approval.',
+    failure: 'An approved proposal changes before execution.',
+    expected: 'The changed proposal needs a new approval; old approval is not reused.',
+    explanation: 'Approval applies to a particular action and version. A prompt alone cannot enforce it.',
+    flow: ['Propose the change', 'Review the exact version', 'Approve or reject'],
+    poster: ['Turn an issue into a proposed fix', 'Review evidence and risk', 'Approve only the exact change'], lab: 'approval', refs: ['protectedBranches', 'workflow']
+  },
+  {
+    title: 'Trust only verified events', subtitle: 'Validate the message before starting work.',
+    artifact: 'A signed-event verification and duplicate-handling exercise.',
+    previous: 'Incident tracking and the approval workflow.',
+    exercise: 'Build a GitHub webhook handler with raw-body HMAC verification and delivery-ID duplicate handling. Use local fixture secrets. Keep any agent response to triage only.',
+    failure: 'Send a bad signature, a repeated delivery and out-of-order messages.',
+    expected: 'Invalid input is rejected before effects; duplicates do not repeat the action.',
+    explanation: 'A webhook is an incoming message. Verify its source and content; it is not an instruction to execute blindly.',
+    flow: ['Verify the signed body', 'Check delivery identity', 'Triage the allowed event'],
+    poster: ['Verify incoming webhook messages', 'Handle duplicate and late events', 'Keep agent actions narrowly scoped'], lab: 'dedupe', refs: ['githubWebhook']
+  },
+  {
+    title: 'Practice a safe recovery', subtitle: 'Use a preview to rehearse a real incident.',
+    artifact: 'A tested recovery runbook and an incident review.',
+    previous: 'Your checks, incident record, approval gate and rollback plan.',
+    exercise: 'Break a disposable preview, detect the failure, prepare a rollback proposal, approve it and verify recovery. Record what did and did not work.',
+    failure: 'Rollback fails or the original symptom remains afterward.',
+    expected: 'Stop and escalate; do not report recovery until the original check passes.',
+    explanation: 'Recovery is an observed result, not the fact that a rollback command completed.',
+    flow: ['Detect and propose', 'Approve and restore', 'Verify and learn'],
+    poster: ['Rehearse a failure on a preview', 'Practice review and rollback', 'Verify the original problem is gone'], lab: 'health', refs: ['publish', 'ci']
+  },
+  {
+    title: 'See what your agent reads', subtitle: 'Keep the useful context. Remove the confusion.',
+    artifact: 'An inventory of instructions, facts, decisions and history.',
+    previous: 'Your wiki, specifications, evaluation notes and runbooks.',
+    exercise: 'List the files your client actually loads. Separate instructions from public facts, identify duplicate rules and remove irrelevant context without losing sources.',
+    failure: 'An instruction file and an old wiki note contradict one another.',
+    expected: 'The conflict is identified and resolved using current approved evidence.',
+    explanation: 'Context is the information available for this task, not everything that ever appeared in a chat.',
+    flow: ['Inspect loaded context', 'Separate rules and facts', 'Keep only what is useful'],
+    poster: ['Inspect the context your agent gets', 'Separate facts, rules and history', 'Remove stale or conflicting instructions'], lab: 'context', refs: ['context', 'codexInstructions']
+  },
+  {
+    title: 'Grow your LLM wiki', subtitle: 'Turn project evidence into reviewed knowledge.',
+    artifact: 'Three sourced wiki additions and a review log.',
+    previous: 'The mini wiki introduced in Course 01 and your context inventory.',
+    exercise: 'Define a claim, source, date and status for each wiki entry. Ingest your feature spec, efficiency results and incident review without rewriting the raw sources.',
+    failure: 'A new summary silently overwrites a conflicting older claim.',
+    expected: 'The conflict is flagged, history is retained and a person approves the correction.',
+    explanation: 'An LLM wiki is maintained knowledge linked to its sources, inspired here by Andrej Karpathy\'s idea file.',
+    flow: ['Keep original sources', 'Draft a sourced page', 'Review and record the change'],
+    poster: ['Extend the wiki you already started', 'Add sources, dates and review status', 'Keep a clear update history'], lab: 'wiki', refs: ['wiki', 'context']
+  },
+  {
+    title: 'Check your wiki in CI', subtitle: 'Catch broken structure before it reaches users.',
+    artifact: 'Wiki lint rules and a human contradiction-review process.',
+    previous: 'Your reviewed wiki pages and existing GitHub checks.',
+    exercise: 'Check links, required source fields and review dates in code. Separately ask an AI to propose contradictions for human review; do not confuse these two checks.',
+    failure: 'Two validly formatted pages contain incompatible facts.',
+    expected: 'Structural lint may pass; the semantic conflict still requires review.',
+    explanation: 'A linter checks specified rules. It cannot establish that every claim is true.',
+    flow: ['Check links and fields', 'Review possible contradictions', 'Approve the corrected knowledge'],
+    poster: ['Check sources, links and review dates', 'Add wiki checks to GitHub', 'Review meaning separately from structure'], lab: 'wiki', refs: ['ci', 'context']
+  },
+  {
+    title: 'Keep retrieved text in its place', subtitle: 'Use evidence without handing it control.',
+    artifact: 'Cited wiki retrieval plus injection and conflict test cases.',
+    previous: 'Your agent harness, wiki and fixed evaluation set.',
+    exercise: 'Return cited wiki passages through a read-only tool. Test a source containing an instruction to publish and a draft conflicting with approved facts.',
+    failure: 'A retrieved page asks the agent to ignore rules and push to main.',
+    expected: 'The text does not authorize action; the environment exposes no write capability.',
+    explanation: 'Retrieved text is evidence to evaluate, not permission. These controls reduce risk, not eliminate it.',
+    flow: ['Retrieve relevant passages', 'Check authority and citations', 'Answer within permissions'],
+    poster: ['Retrieve only relevant wiki evidence', 'Test misleading and hostile source text', 'Keep write access outside the helper'], lab: 'context', refs: ['security', 'mcp', 'context']
+  },
+  {
+    title: 'Hand it to a fresh session', subtitle: 'A project someone else can continue.',
+    artifact: 'A verified handoff, partner feedback and the final showcase.',
+    previous: 'Your website, agents, tests, wiki and operating runbooks.',
+    exercise: 'Have a partner or fresh cloud session clone the repository, read committed context only and complete one small change. Check the result against your fixed expectations.',
+    failure: 'The new session revives an old decision or needs a fact that exists only in chat.',
+    expected: 'Missing context becomes a tracked correction; the rerun uses the updated repository.',
+    explanation: 'A repository can carry context between sessions only when the next agent reads the relevant files.',
+    flow: ['Start from a clean clone', 'Make one bounded change', 'Verify and share the result'],
+    poster: ['Test a clean-session handoff', 'Improve missing or misleading context', 'Show the complete project and its limits'], lab: 'context', refs: ['context', 'eval', 'codexInstructions']
+  }
+];
