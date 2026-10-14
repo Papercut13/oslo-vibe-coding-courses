@@ -10,3 +10,5 @@
 - Removed unconfirmed future dates, venue, admission and donation claims from current posters.
 - Added share-message drafts, release readiness, portable build commands, locked dependencies and an inactive GitHub Actions template; activation needs workflow permission.
 - Kept future reference-build gaps explicit rather than claiming local concept labs are live integrations.
+- Published the private dedicated cloud environment after passing onboarding checks, with the managed file-browser limitation documented.
+- Launched the research/reference-build continuation through the cloud UI after the installed CLI could not resolve the new environment. No automatic merge or production deployment is authorized.
