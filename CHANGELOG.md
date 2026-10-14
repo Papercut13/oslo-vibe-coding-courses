@@ -8,5 +8,5 @@
 - Reused the approved 27-slide Course 01 Session 02 instead of the retired visual-design lesson.
 - Added consistent artifact, exercise, failure, expected-result and progression content to later-session drafts.
 - Removed unconfirmed future dates, venue, admission and donation claims from current posters.
-- Added share-message drafts, release readiness, portable build commands, locked dependencies and GitHub CI.
+- Added share-message drafts, release readiness, portable build commands, locked dependencies and an inactive GitHub Actions template; activation needs workflow permission.
 - Kept future reference-build gaps explicit rather than claiming local concept labs are live integrations.
