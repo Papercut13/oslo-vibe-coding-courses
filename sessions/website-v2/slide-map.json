@@ -5,143 +5,71 @@
   },
   {
     "id": "result",
-    "title": "One question. One useful answer."
+    "title": "Today's result"
   },
   {
     "id": "route",
-    "title": "Today you build three things"
-  },
-  {
-    "id": "lab-setup",
-    "title": "Lab 0: Get ready"
-  },
-  {
-    "id": "search-flow",
-    "title": "Start with your own content"
-  },
-  {
-    "id": "try-search",
-    "title": "Try a question"
-  },
-  {
-    "id": "predict",
-    "title": "Predict first, then press"
-  },
-  {
-    "id": "unknown",
-    "title": "No source? Do not guess."
-  },
-  {
-    "id": "build-search",
-    "title": "Lab 1: Add \"Ask this site\""
-  },
-  {
-    "id": "lab-search",
-    "title": "Lab 1: Build it on your site"
-  },
-  {
-    "id": "build-check",
-    "title": "Checkpoint: review what the agent built"
-  },
-  {
-    "id": "ai-choice",
-    "title": "AI can help write the answer"
+    "title": "Five steps to your chat box"
   },
   {
     "id": "server",
-    "title": "Your server keeps the key"
+    "title": "How it works, in plain words"
+  },
+  {
+    "id": "step-facts",
+    "title": "Step 1: Write down your facts"
+  },
+  {
+    "id": "try-search",
+    "title": "Try it: find the matching note"
+  },
+  {
+    "id": "step-key",
+    "title": "Step 2: Get your free AI key"
+  },
+  {
+    "id": "build-chat",
+    "title": "Step 3: Ask your coding agent to build it"
+  },
+  {
+    "id": "step-check",
+    "title": "Step 3: Check what it built"
+  },
+  {
+    "id": "step-env",
+    "title": "Step 4: Give Vercel the key"
+  },
+  {
+    "id": "step-test",
+    "title": "Step 5: Push and test it"
+  },
+  {
+    "id": "troubleshoot",
+    "title": "If it does not work"
+  },
+  {
+    "id": "agent-rules",
+    "title": "Give your coding agent house rules"
+  },
+  {
+    "id": "update",
+    "title": "Add one note, watch the answer appear"
+  },
+  {
+    "id": "step-update",
+    "title": "Your turn: add one new fact"
   },
   {
     "id": "leak",
     "title": "Spot the leak"
   },
   {
-    "id": "key",
-    "title": "Never put an API key in the page"
-  },
-  {
-    "id": "vercel",
-    "title": "Connect the optional AI on Vercel"
-  },
-  {
-    "id": "selected-context",
-    "title": "Send the useful facts, not everything"
-  },
-  {
-    "id": "launch",
-    "title": "Before other people use the AI"
-  },
-  {
-    "id": "where-facts",
-    "title": "Good answers need clear notes"
-  },
-  {
-    "id": "karpathy",
-    "title": "Karpathy's LLM Wiki idea"
-  },
-  {
-    "id": "wiki-file",
-    "title": "One page, one clear fact"
-  },
-  {
-    "id": "wiki-anatomy",
-    "title": "Follow one fact through the folder"
-  },
-  {
-    "id": "readers",
-    "title": "Two readers. Different information."
-  },
-  {
-    "id": "wiki-prompt",
-    "title": "Ask AI to organize, then review"
-  },
-  {
-    "id": "lab-wiki",
-    "title": "Lab 2: Write one wiki page"
-  },
-  {
-    "id": "wiki-template",
-    "title": "Template for your own page"
-  },
-  {
-    "id": "update",
-    "title": "Add one useful answer"
-  },
-  {
-    "id": "lab-update",
-    "title": "Lab 3: Make the real change"
-  },
-  {
-    "id": "update-diff",
-    "title": "What the change looks like"
-  },
-  {
-    "id": "answer-checks",
-    "title": "Keep a few questions as checks"
-  },
-  {
-    "id": "run-checks",
-    "title": "Run the checks yourself"
-  },
-  {
-    "id": "break-it",
-    "title": "Break it on purpose"
-  },
-  {
     "id": "security",
-    "title": "Keep the website and key safe"
+    "title": "Three rules, so nobody gets burned"
   },
   {
-    "id": "ci",
-    "title": "GitHub repeats your checks"
-  },
-  {
-    "id": "release",
-    "title": "Preview first. Publish after review."
-  },
-  {
-    "id": "maintain",
-    "title": "When something goes wrong"
+    "id": "publish",
+    "title": "Publish safely with a pull request"
   },
   {
     "id": "your-turn",

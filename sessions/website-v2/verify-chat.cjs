@@ -57,12 +57,11 @@ execFileSync('zip',['-qr',zip,'site-chat','-x','*/node_modules/*','*/dist/*','*/
   await page.fill('#demo-question','Do you offer refunds?');await page.press('#demo-question','Enter');assert.match(await page.textContent('#demo-answer'),/couldn't find/);
   await page.keyboard.press('ArrowLeft');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'try-search');
   await page.fill('#demo-question','How do I download a poster?');await page.press('#demo-question','Enter');assert.match(await page.textContent('#demo-answer'),/900 x 1125/);
-  await page.locator('body').click({position:{x:10,y:10}});await page.keyboard.press('ArrowRight');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'predict');
+  await page.locator('body').click({position:{x:10,y:10}});await page.keyboard.press('ArrowRight');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'step-key');
   await page.keyboard.press('ArrowLeft');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'try-search');await page.reload();await page.waitForFunction(()=>Reveal.getCurrentSlide()?.id==='try-search');
   await page.click('#contents-open');assert.equal(await page.locator('#contents').evaluate(e=>e.open),true);await page.keyboard.press('Escape');
-  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='build-search'));await page.click('[data-copy="build-search-prompt"]');await page.waitForFunction(()=>document.querySelector('#build-search .copy-state').textContent==='Copied');
-  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='launch'));await page.locator('#launch input').first().check();assert.equal(await page.locator('#launch input').first().isChecked(),true);
-  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='predict'));await page.click('[data-predict="Which color options are available?"]');assert.match(await page.textContent('#predict .predict-out >> nth=3'),/Not found/);await page.click('[data-predict="How do I download a poster?"]');assert.match(await page.textContent('#predict'),/Found: Download a poster/);
+  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='build-chat'));await page.click('[data-copy="build-chat-prompt"]');await page.waitForFunction(()=>document.querySelector('#build-chat .copy-state').textContent==='Copied');
+  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='showcase'));await page.locator('#showcase input').first().check();assert.equal(await page.locator('#showcase input').first().isChecked(),true);
   await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='update'));assert.match(await page.textContent('#update-answer'),/couldn't find/);await page.click('#update-toggle');assert.match(await page.textContent('#update-answer'),/Ember, Blue, and Lime/);
   await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='leak'));await page.click('#leak details >> nth=0 >> summary');assert.equal(await page.locator('#leak details').first().evaluate(e=>e.open),true);
   for(const pathname of ['index.html','resources.html']){

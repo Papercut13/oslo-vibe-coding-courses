@@ -13,8 +13,7 @@ function answer(){
  const p=document.createElement('p');p.textContent=docs[0]?.text||"I couldn't find that information on this website.";output.append(p);
  if(docs[0]){const words=document.createElement('p');words.className='matched';words.textContent='Matched words: '+docs[0].terms.join(', ');output.append(words);const a=document.createElement('a');a.textContent='Source: '+docs[0].title;a.href=new URL(docs[0].url,demoSiteBase).href;a.target='_blank';a.rel='noopener';output.append(a);}
 }
-document.querySelectorAll('[data-predict]').forEach(button=>button.addEventListener('click',()=>{const docs=search(button.dataset.predict),out=button.nextElementSibling;out.textContent=docs[0]?'Found: '+docs[0].title:'Not found';out.className='predict-out '+(docs[0]?'found':'missing');}));
-// Before/after preview of the Lab 3 FAQ. The real change is made in site-chat/ files.
+// Before/after preview of adding one wiki fact. Participants make the real change in their own files.
 const paletteFact={id:'palettes',title:'Palette choices',text:'Available colour options are Ember, Blue, and Lime.',url:'help.html',verifiedOn:'2026-10-15'};
 const toggle=document.querySelector('#update-toggle'),updateOut=document.querySelector('#update-answer');
 let updateSearch=search;
@@ -24,7 +23,7 @@ function updateAnswer(){
  const p=document.createElement('p');p.textContent=docs[0]?.text||"I couldn't find that information on this website.";updateOut.append(tag,p);
  if(docs[0]){const s=document.createElement('p');s.className='matched';s.textContent='Source: '+docs[0].title;updateOut.append(s);}
 }
-toggle.addEventListener('click',()=>{const on=toggle.getAttribute('aria-pressed')!=='true';toggle.setAttribute('aria-pressed',String(on));toggle.querySelector('span').textContent=on?'Remove the palette FAQ':'Add the palette FAQ';updateSearch=on?SiteSearch.createSearch([...SiteKnowledge,paletteFact]):search;updateAnswer();});
+toggle.addEventListener('click',()=>{const on=toggle.getAttribute('aria-pressed')!=='true';toggle.setAttribute('aria-pressed',String(on));toggle.querySelector('span').textContent=on?'Remove wiki/palettes.md':'Add wiki/palettes.md';updateSearch=on?SiteSearch.createSearch([...SiteKnowledge,paletteFact]):search;updateAnswer();});
 document.querySelector('#update-demo').addEventListener('submit',event=>{event.preventDefault();updateAnswer();});
 updateAnswer();
 document.querySelector('#search-demo').addEventListener('submit',event=>{event.preventDefault();answer();});
