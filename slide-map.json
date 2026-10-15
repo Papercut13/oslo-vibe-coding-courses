@@ -90,17 +90,17 @@
       },
       {
         "id": "route",
-        "title": "Three upgrades for your website",
+        "title": "Today you build three things",
         "number": 3
+      },
+      {
+        "id": "lab-setup",
+        "title": "Lab 0: Get ready",
+        "number": 4
       },
       {
         "id": "search-flow",
         "title": "Start with your own content",
-        "number": 4
-      },
-      {
-        "id": "build-search",
-        "title": "Add \"Ask this site\"",
         "number": 5
       },
       {
@@ -109,109 +109,174 @@
         "number": 6
       },
       {
+        "id": "predict",
+        "title": "Predict first, then press",
+        "number": 7
+      },
+      {
         "id": "unknown",
         "title": "No source? Do not guess.",
-        "number": 7
+        "number": 8
+      },
+      {
+        "id": "build-search",
+        "title": "Lab 1: Add \"Ask this site\"",
+        "number": 9
+      },
+      {
+        "id": "lab-search",
+        "title": "Lab 1: Build it on your site",
+        "number": 10
+      },
+      {
+        "id": "build-check",
+        "title": "Checkpoint: review what the agent built",
+        "number": 11
       },
       {
         "id": "ai-choice",
         "title": "AI can help write the answer",
-        "number": 8
+        "number": 12
       },
       {
         "id": "server",
         "title": "Your server keeps the key",
-        "number": 9
+        "number": 13
       },
       {
-        "id": "vercel",
-        "title": "Connect the optional AI on Vercel",
-        "number": 10
+        "id": "leak",
+        "title": "Spot the leak",
+        "number": 14
       },
       {
         "id": "key",
         "title": "Never put an API key in the page",
-        "number": 11
+        "number": 15
+      },
+      {
+        "id": "vercel",
+        "title": "Connect the optional AI on Vercel",
+        "number": 16
       },
       {
         "id": "selected-context",
         "title": "Send the useful facts, not everything",
-        "number": 12
+        "number": 17
       },
       {
         "id": "launch",
         "title": "Before other people use the AI",
-        "number": 13
+        "number": 18
       },
       {
         "id": "where-facts",
         "title": "Good answers need clear notes",
-        "number": 14
+        "number": 19
       },
       {
         "id": "karpathy",
         "title": "Karpathy's LLM Wiki idea",
-        "number": 15
+        "number": 20
       },
       {
         "id": "wiki-file",
         "title": "One page, one clear fact",
-        "number": 16
+        "number": 21
+      },
+      {
+        "id": "wiki-anatomy",
+        "title": "Follow one fact through the folder",
+        "number": 22
       },
       {
         "id": "readers",
         "title": "Two readers. Different information.",
-        "number": 17
+        "number": 23
       },
       {
         "id": "wiki-prompt",
         "title": "Ask AI to organize, then review",
-        "number": 18
+        "number": 24
+      },
+      {
+        "id": "lab-wiki",
+        "title": "Lab 2: Write one wiki page",
+        "number": 25
+      },
+      {
+        "id": "wiki-template",
+        "title": "Template for your own page",
+        "number": 26
       },
       {
         "id": "update",
         "title": "Add one useful answer",
-        "number": 19
+        "number": 27
+      },
+      {
+        "id": "lab-update",
+        "title": "Lab 3: Make the real change",
+        "number": 28
+      },
+      {
+        "id": "update-diff",
+        "title": "What the change looks like",
+        "number": 29
       },
       {
         "id": "answer-checks",
         "title": "Keep a few questions as checks",
-        "number": 20
+        "number": 30
+      },
+      {
+        "id": "run-checks",
+        "title": "Run the checks yourself",
+        "number": 31
+      },
+      {
+        "id": "break-it",
+        "title": "Break it on purpose",
+        "number": 32
       },
       {
         "id": "security",
         "title": "Keep the website and key safe",
-        "number": 21
+        "number": 33
       },
       {
         "id": "ci",
         "title": "GitHub repeats your checks",
-        "number": 22
+        "number": 34
       },
       {
         "id": "release",
         "title": "Preview first. Publish after review.",
-        "number": 23
+        "number": 35
       },
       {
         "id": "maintain",
         "title": "When something goes wrong",
-        "number": 24
+        "number": 36
       },
       {
         "id": "your-turn",
-        "title": "Try it on your own website",
-        "number": 25
+        "title": "Build time: pick your track",
+        "number": 37
+      },
+      {
+        "id": "showcase",
+        "title": "Show us in 60 seconds",
+        "number": 38
       },
       {
         "id": "next",
         "title": "A starting point for the next classes",
-        "number": 26
+        "number": 39
       },
       {
         "id": "questions",
         "title": "Questions & thanks",
-        "number": 27
+        "number": 40
       }
     ],
     "special": true

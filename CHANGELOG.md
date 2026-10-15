@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-15
+
+- Made Course 01 Session 02 more hands-on: 27 to 40 slides with timed Labs 0-3 (goal, steps, done-when), a predict-then-run search table, a spot-the-leak exercise, a before/after FAQ toggle, real file walkthroughs, a run-the-checks and break-it-on-purpose slide, build tracks and a showcase checklist. Search examples use actual results from the bundled search.
+- Session 2 verification now finds slides by id and exercises the new interactions.
+
 ## 2026-10-14
 
 - Established the dedicated public course repository, separate from historical context and presentation folders.

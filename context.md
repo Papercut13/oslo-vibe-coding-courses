@@ -8,7 +8,7 @@ The five course names and their order are fixed in curriculum.mjs. session-updat
 
 Course 01 Session 01 was delivered 8 October 2026. The website is Studio Launch: editable posters, filters, local drafts and PNG export. GitHub and Vercel were introduced. The week-01 deck is a branded recap/build path, not a verbatim transcript of the delivered presentation.
 
-Course 01 Session 02 is approved for 15 October 2026, 16:00-18:00, Spaces Stortorvet, Oslo. It teaches website search/optional AI help, a small reviewed LLM wiki, and maintenance/GitHub CI. Its fuller 27-slide implementation lives in sessions/website-v2/ and is reused by week-02. Retain its main title and confirmed event details.
+Course 01 Session 02 is approved for 15 October 2026, 16:00-18:00, Spaces Stortorvet, Oslo. It teaches website search/optional AI help, a small reviewed LLM wiki, and maintenance/GitHub CI. Its fuller 40-slide hands-on implementation (labs added 15 October) lives in sessions/website-v2/ and is reused by week-02. Retain its main title and confirmed event details.
 
 Sessions 03-25 are revised review drafts. No future date, time, venue, admission or donation amount is confirmed. Their posters are not yet invitations ready to send. Later reference implementations and live-service rehearsals remain in the release checklist.
 

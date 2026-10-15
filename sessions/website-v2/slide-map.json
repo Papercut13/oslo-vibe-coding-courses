@@ -9,23 +9,39 @@
   },
   {
     "id": "route",
-    "title": "Three upgrades for your website"
+    "title": "Today you build three things"
+  },
+  {
+    "id": "lab-setup",
+    "title": "Lab 0: Get ready"
   },
   {
     "id": "search-flow",
     "title": "Start with your own content"
   },
   {
-    "id": "build-search",
-    "title": "Add \"Ask this site\""
-  },
-  {
     "id": "try-search",
     "title": "Try a question"
   },
   {
+    "id": "predict",
+    "title": "Predict first, then press"
+  },
+  {
     "id": "unknown",
     "title": "No source? Do not guess."
+  },
+  {
+    "id": "build-search",
+    "title": "Lab 1: Add \"Ask this site\""
+  },
+  {
+    "id": "lab-search",
+    "title": "Lab 1: Build it on your site"
+  },
+  {
+    "id": "build-check",
+    "title": "Checkpoint: review what the agent built"
   },
   {
     "id": "ai-choice",
@@ -36,12 +52,16 @@
     "title": "Your server keeps the key"
   },
   {
-    "id": "vercel",
-    "title": "Connect the optional AI on Vercel"
+    "id": "leak",
+    "title": "Spot the leak"
   },
   {
     "id": "key",
     "title": "Never put an API key in the page"
+  },
+  {
+    "id": "vercel",
+    "title": "Connect the optional AI on Vercel"
   },
   {
     "id": "selected-context",
@@ -64,6 +84,10 @@
     "title": "One page, one clear fact"
   },
   {
+    "id": "wiki-anatomy",
+    "title": "Follow one fact through the folder"
+  },
+  {
     "id": "readers",
     "title": "Two readers. Different information."
   },
@@ -72,12 +96,36 @@
     "title": "Ask AI to organize, then review"
   },
   {
+    "id": "lab-wiki",
+    "title": "Lab 2: Write one wiki page"
+  },
+  {
+    "id": "wiki-template",
+    "title": "Template for your own page"
+  },
+  {
     "id": "update",
     "title": "Add one useful answer"
   },
   {
+    "id": "lab-update",
+    "title": "Lab 3: Make the real change"
+  },
+  {
+    "id": "update-diff",
+    "title": "What the change looks like"
+  },
+  {
     "id": "answer-checks",
     "title": "Keep a few questions as checks"
+  },
+  {
+    "id": "run-checks",
+    "title": "Run the checks yourself"
+  },
+  {
+    "id": "break-it",
+    "title": "Break it on purpose"
   },
   {
     "id": "security",
@@ -97,7 +145,11 @@
   },
   {
     "id": "your-turn",
-    "title": "Try it on your own website"
+    "title": "Build time: pick your track"
+  },
+  {
+    "id": "showcase",
+    "title": "Show us in 60 seconds"
   },
   {
     "id": "next",
