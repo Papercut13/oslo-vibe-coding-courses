@@ -42,7 +42,7 @@ execFileSync('zip',['-qr',zip,'site-chat','-x','*/node_modules/*','*/dist/*','*/
     const issues=await page.evaluate(()=>{
      const s=Reveal.getCurrentSlide(),h=s.querySelector('header').getBoundingClientRect(),f=s.querySelector('footer').getBoundingClientRect(),sr=s.getBoundingClientRect(),out=[];
      for(const el of s.querySelectorAll('main h1,main h2,main h3,main p,main pre,main .flow,main .steps,main .checks,main table,main .server-diagram,main .wiki-example')){
-      const r=el.getBoundingClientRect();if(r.top<h.bottom-1||r.bottom>f.top+1||r.left<sr.left-1||r.right>sr.right+1||el.scrollWidth>el.clientWidth+2)out.push({text:el.textContent.slice(0,90),top:r.top,bottom:r.bottom,footer:f.top});
+      if(!el.getClientRects().length)continue;const r=el.getBoundingClientRect();if(r.top<h.bottom-1||r.bottom>f.top+1||r.left<sr.left-1||r.right>sr.right+1||el.scrollWidth>el.clientWidth+2)out.push({text:el.textContent.slice(0,90),top:r.top,bottom:r.bottom,footer:f.top});
      }
      if(s.querySelector('.brand').getBoundingClientRect().right>s.querySelector('.chapter').getBoundingClientRect().left)out.push('Header overlap');
      for(const img of s.querySelectorAll('img'))if(!img.complete||!img.naturalWidth)out.push('Missing image');
@@ -57,11 +57,13 @@ execFileSync('zip',['-qr',zip,'site-chat','-x','*/node_modules/*','*/dist/*','*/
   await page.fill('#demo-question','Do you offer refunds?');await page.press('#demo-question','Enter');assert.match(await page.textContent('#demo-answer'),/couldn't find/);
   await page.keyboard.press('ArrowLeft');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'try-search');
   await page.fill('#demo-question','How do I download a poster?');await page.press('#demo-question','Enter');assert.match(await page.textContent('#demo-answer'),/900 x 1125/);
-  await page.locator('body').click({position:{x:10,y:10}});await page.keyboard.press('ArrowRight');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'unknown');
+  await page.locator('body').click({position:{x:10,y:10}});await page.keyboard.press('ArrowRight');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'step-key');
   await page.keyboard.press('ArrowLeft');assert.equal(await page.evaluate(()=>Reveal.getCurrentSlide().id),'try-search');await page.reload();await page.waitForFunction(()=>Reveal.getCurrentSlide()?.id==='try-search');
   await page.click('#contents-open');assert.equal(await page.locator('#contents').evaluate(e=>e.open),true);await page.keyboard.press('Escape');
-  await page.evaluate(()=>Reveal.slide(4));await page.click('[data-copy="build-search-prompt"]');await page.waitForFunction(()=>document.querySelector('#build-search .copy-state').textContent==='Copied');
-  await page.evaluate(()=>Reveal.slide(12));await page.locator('#launch input').first().check();assert.equal(await page.locator('#launch input').first().isChecked(),true);
+  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='build-chat'));await page.click('[data-copy="build-chat-prompt"]');await page.waitForFunction(()=>document.querySelector('#build-chat .copy-state').textContent==='Copied');
+  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='showcase'));await page.locator('#showcase input').first().check();assert.equal(await page.locator('#showcase input').first().isChecked(),true);
+  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='update'));assert.match(await page.textContent('#update-answer'),/couldn't find/);await page.click('#update-toggle');assert.match(await page.textContent('#update-answer'),/Ember, Blue, and Lime/);
+  await page.evaluate(i=>Reveal.slide(i),map.findIndex(s=>s.id==='leak'));await page.click('#leak details >> nth=0 >> summary');assert.equal(await page.locator('#leak details').first().evaluate(e=>e.open),true);
   for(const pathname of ['index.html','resources.html']){
    await page.goto(url(pathname));
    const links=await page.locator('[href],[src]').evaluateAll(nodes=>nodes.map(e=>e.href||e.src).filter(u=>typeof u==='string'&&u.startsWith('file:')));

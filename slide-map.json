@@ -85,133 +85,108 @@
       },
       {
         "id": "result",
-        "title": "One question. One useful answer.",
+        "title": "Today's result",
         "number": 2
       },
       {
         "id": "route",
-        "title": "Three upgrades for your website",
+        "title": "Five steps to your chat box",
         "number": 3
       },
       {
-        "id": "search-flow",
-        "title": "Start with your own content",
+        "id": "server",
+        "title": "How it works, in plain words",
         "number": 4
       },
       {
-        "id": "build-search",
-        "title": "Add \"Ask this site\"",
+        "id": "step-facts",
+        "title": "Step 1: Write down your facts",
         "number": 5
       },
       {
         "id": "try-search",
-        "title": "Try a question",
+        "title": "Try it: find the matching note",
         "number": 6
       },
       {
-        "id": "unknown",
-        "title": "No source? Do not guess.",
+        "id": "step-key",
+        "title": "Step 2: Get your free AI key",
         "number": 7
       },
       {
-        "id": "ai-choice",
-        "title": "AI can help write the answer",
+        "id": "build-chat",
+        "title": "Step 3: Ask your coding agent to build it",
         "number": 8
       },
       {
-        "id": "server",
-        "title": "Your server keeps the key",
+        "id": "step-check",
+        "title": "Step 3: Check what it built",
         "number": 9
       },
       {
-        "id": "vercel",
-        "title": "Connect the optional AI on Vercel",
+        "id": "step-env",
+        "title": "Step 4: Give Vercel the key",
         "number": 10
       },
       {
-        "id": "key",
-        "title": "Never put an API key in the page",
+        "id": "step-test",
+        "title": "Step 5: Push and test it",
         "number": 11
       },
       {
-        "id": "selected-context",
-        "title": "Send the useful facts, not everything",
+        "id": "troubleshoot",
+        "title": "If it does not work",
         "number": 12
       },
       {
-        "id": "launch",
-        "title": "Before other people use the AI",
+        "id": "agent-rules",
+        "title": "Give your coding agent house rules",
         "number": 13
       },
       {
-        "id": "where-facts",
-        "title": "Good answers need clear notes",
+        "id": "update",
+        "title": "Add one note, watch the answer appear",
         "number": 14
       },
       {
-        "id": "karpathy",
-        "title": "Karpathy's LLM Wiki idea",
+        "id": "step-update",
+        "title": "Your turn: add one new fact",
         "number": 15
       },
       {
-        "id": "wiki-file",
-        "title": "One page, one clear fact",
+        "id": "leak",
+        "title": "Spot the leak",
         "number": 16
       },
       {
-        "id": "readers",
-        "title": "Two readers. Different information.",
+        "id": "security",
+        "title": "Three rules, so nobody gets burned",
         "number": 17
       },
       {
-        "id": "wiki-prompt",
-        "title": "Ask AI to organize, then review",
+        "id": "publish",
+        "title": "Publish safely with a pull request",
         "number": 18
       },
       {
-        "id": "update",
-        "title": "Add one useful answer",
+        "id": "your-turn",
+        "title": "Build time: pick your track",
         "number": 19
       },
       {
-        "id": "answer-checks",
-        "title": "Keep a few questions as checks",
+        "id": "showcase",
+        "title": "Show us in 60 seconds",
         "number": 20
-      },
-      {
-        "id": "security",
-        "title": "Keep the website and key safe",
-        "number": 21
-      },
-      {
-        "id": "ci",
-        "title": "GitHub repeats your checks",
-        "number": 22
-      },
-      {
-        "id": "release",
-        "title": "Preview first. Publish after review.",
-        "number": 23
-      },
-      {
-        "id": "maintain",
-        "title": "When something goes wrong",
-        "number": 24
-      },
-      {
-        "id": "your-turn",
-        "title": "Try it on your own website",
-        "number": 25
       },
       {
         "id": "next",
         "title": "A starting point for the next classes",
-        "number": 26
+        "number": 21
       },
       {
         "id": "questions",
         "title": "Questions & thanks",
-        "number": 27
+        "number": 22
       }
     ],
     "special": true

@@ -5,99 +5,79 @@
   },
   {
     "id": "result",
-    "title": "One question. One useful answer."
+    "title": "Today's result"
   },
   {
     "id": "route",
-    "title": "Three upgrades for your website"
-  },
-  {
-    "id": "search-flow",
-    "title": "Start with your own content"
-  },
-  {
-    "id": "build-search",
-    "title": "Add \"Ask this site\""
-  },
-  {
-    "id": "try-search",
-    "title": "Try a question"
-  },
-  {
-    "id": "unknown",
-    "title": "No source? Do not guess."
-  },
-  {
-    "id": "ai-choice",
-    "title": "AI can help write the answer"
+    "title": "Five steps to your chat box"
   },
   {
     "id": "server",
-    "title": "Your server keeps the key"
+    "title": "How it works, in plain words"
   },
   {
-    "id": "vercel",
-    "title": "Connect the optional AI on Vercel"
+    "id": "step-facts",
+    "title": "Step 1: Write down your facts"
   },
   {
-    "id": "key",
-    "title": "Never put an API key in the page"
+    "id": "try-search",
+    "title": "Try it: find the matching note"
   },
   {
-    "id": "selected-context",
-    "title": "Send the useful facts, not everything"
+    "id": "step-key",
+    "title": "Step 2: Get your free AI key"
   },
   {
-    "id": "launch",
-    "title": "Before other people use the AI"
+    "id": "build-chat",
+    "title": "Step 3: Ask your coding agent to build it"
   },
   {
-    "id": "where-facts",
-    "title": "Good answers need clear notes"
+    "id": "step-check",
+    "title": "Step 3: Check what it built"
   },
   {
-    "id": "karpathy",
-    "title": "Karpathy's LLM Wiki idea"
+    "id": "step-env",
+    "title": "Step 4: Give Vercel the key"
   },
   {
-    "id": "wiki-file",
-    "title": "One page, one clear fact"
+    "id": "step-test",
+    "title": "Step 5: Push and test it"
   },
   {
-    "id": "readers",
-    "title": "Two readers. Different information."
+    "id": "troubleshoot",
+    "title": "If it does not work"
   },
   {
-    "id": "wiki-prompt",
-    "title": "Ask AI to organize, then review"
+    "id": "agent-rules",
+    "title": "Give your coding agent house rules"
   },
   {
     "id": "update",
-    "title": "Add one useful answer"
+    "title": "Add one note, watch the answer appear"
   },
   {
-    "id": "answer-checks",
-    "title": "Keep a few questions as checks"
+    "id": "step-update",
+    "title": "Your turn: add one new fact"
+  },
+  {
+    "id": "leak",
+    "title": "Spot the leak"
   },
   {
     "id": "security",
-    "title": "Keep the website and key safe"
+    "title": "Three rules, so nobody gets burned"
   },
   {
-    "id": "ci",
-    "title": "GitHub repeats your checks"
-  },
-  {
-    "id": "release",
-    "title": "Preview first. Publish after review."
-  },
-  {
-    "id": "maintain",
-    "title": "When something goes wrong"
+    "id": "publish",
+    "title": "Publish safely with a pull request"
   },
   {
     "id": "your-turn",
-    "title": "Try it on your own website"
+    "title": "Build time: pick your track"
+  },
+  {
+    "id": "showcase",
+    "title": "Show us in 60 seconds"
   },
   {
     "id": "next",
